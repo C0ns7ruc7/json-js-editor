@@ -1,0 +1,49 @@
+*{
+	border:				1px solid gray;
+	margin:				0.5%;
+	padding:			0.5%;
+	text-align:			center;
+	border-radius:		5px;
+}
+/*
+a{
+	padding:			0;
+	margin:				0;
+	border-width:		0;
+}
+body{
+	background-color: 	gray;
+}
+section{
+	background-color:	white;
+	height:				88vh;
+}
+p{
+	float:				left;
+	width:				97%;
+	background-color:	#b0b0b0;
+	font-size:			1.2em;
+}
+#menu{
+	height:				5vh;
+}
+.nav{
+	width:				97%;
+	float:				left;
+	height:				2em;
+}
+.nav:hover{
+	background-image:	url("../img/test.gif");
+	background-position:center;
+	margin-left:		-0.25%;
+	width:				98.5%;
+	font-size:			1.3em;
+	color:				white;
+	height:				1.54em;
+}
+.divider{
+	float:				left;
+	height:				97%;
+	width:				22.5%;
+	overflow:			auto;
+}

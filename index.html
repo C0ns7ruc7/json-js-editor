@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="json web editor">
+		<meta name="author" content="Valiant Hekert">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="css/css.css">
+		
+		<title>json editor</title>
+		
+		<style>
+
+		</style>
+	</head>
+	<body>
+		
+		<script>
+			function readTextFile(file, callback) {
+				var rawFile = new XMLHttpRequest();
+				rawFile.overrideMimeType("application/json");
+				rawFile.open("GET", file, true);
+				rawFile.onreadystatechange = function() {
+					if (rawFile.readyState === 4 && rawFile.status == "200") {
+						callback(rawFile.responseText);
+					}
+				}
+				rawFile.send(null);
+			}
+
+			//usage:
+			readTextFile("imported/test.json", function(text){
+				var data = JSON.parse(text);
+				console.log(data);
+			});
+		</script>
+		
+	</body>
+	<!-- 
+	<section></section>
+	<div></div>
+	-->
+
+</html>
